@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\glUtils\imageloader.cpp">
+      <Filter>glUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\submodules\chess\chess\src\chess\ChessBoard.cpp">
+      <Filter>chess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\submodules\chess\chess\src\chess\ChessPiece.cpp">
+      <Filter>chess</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="glUtils">
+      <UniqueIdentifier>{6af9023d-bb1a-4361-9c89-6bb5dda81782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="chess">
+      <UniqueIdentifier>{5adb94c5-74b1-48e5-a7f9-54107502a60f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\glUtils\imageloader.h">
+      <Filter>glUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\submodules\chess\chess\src\chess\BaseItem.h">
+      <Filter>chess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\submodules\chess\chess\src\chess\ChessBoard.h">
+      <Filter>chess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\submodules\chess\chess\src\chess\ChessPiece.h">
+      <Filter>chess</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
