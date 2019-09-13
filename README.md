@@ -1,7 +1,12 @@
 # CHESS
 Chess visualizer developed in C++ and OpenGL
 
----
+To clone this repository use this:
+
+``` txt
+git clone --recursive https://github.com/VgTajdd/chess_problem.git
+```
+___
 
 ## SOLVE IT!
 
