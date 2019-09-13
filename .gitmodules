@@ -1,3 +1,6 @@
 [submodule "submodules/chess_opengl"]
 	path = submodules/chess_opengl
 	url = https://github.com/VgTajdd/chess_opengl.git
+[submodule "submodules/chess"]
+	path = submodules/chess
+	url = https://github.com/VgTajdd/chess.git
