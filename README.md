@@ -46,3 +46,10 @@ Use any image for the pieces as well as the graphic library of your choice, but 
 Solutions that only use the text console will not be considered valid.
 
 Verify that the images are located correctly so there are no problems executing your project.
+
+___
+
+# SOLUTION
+
+To generate executables you only need to open solution file (I used Visual Studio Community 2017) and run.
+
