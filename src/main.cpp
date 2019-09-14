@@ -2,7 +2,7 @@
 #include <string>
 #include <ctype.h>
 #include "glUtils/imageloader.h"
-#include "../submodules/chess/chess/src/chess/ChessBoard.h"
+#include "../submodules/chess/src/chess/ChessBoard.h"
 
 #ifdef __APPLE__
 #include <OpenGL/OpenGL.h>

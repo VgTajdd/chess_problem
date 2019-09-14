@@ -5,11 +5,14 @@
     <ClCompile Include="..\glUtils\imageloader.cpp">
       <Filter>glUtils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\submodules\chess\chess\src\chess\ChessBoard.cpp">
+    <ClCompile Include="..\..\submodules\chess\src\chess\ChessBoard.cpp">
       <Filter>chess</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\submodules\chess\chess\src\chess\ChessPiece.cpp">
+    <ClCompile Include="..\..\submodules\chess\src\chess\ChessPiece.cpp">
       <Filter>chess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\submodules\chess\src\game\ChessGame.cpp">
+      <Filter>game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -19,19 +22,25 @@
     <Filter Include="chess">
       <UniqueIdentifier>{5adb94c5-74b1-48e5-a7f9-54107502a60f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{8503a05a-d812-4df9-b81f-1f3730415ae1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\glUtils\imageloader.h">
       <Filter>glUtils</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\submodules\chess\chess\src\chess\BaseItem.h">
+    <ClInclude Include="..\..\submodules\chess\src\chess\BaseItem.h">
       <Filter>chess</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\submodules\chess\chess\src\chess\ChessBoard.h">
+    <ClInclude Include="..\..\submodules\chess\src\chess\ChessBoard.h">
       <Filter>chess</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\submodules\chess\chess\src\chess\ChessPiece.h">
+    <ClInclude Include="..\..\submodules\chess\src\chess\ChessPiece.h">
       <Filter>chess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\submodules\chess\src\game\ChessGame.h">
+      <Filter>game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
