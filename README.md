@@ -1,5 +1,5 @@
-# CHESS
-Chess visualizer developed in C++ and OpenGL
+# CHESS PARSER PROBLEM
+Chess parser problem (visualizer developed in C++ and OpenGL)
 
 To clone this repository use this:
 
