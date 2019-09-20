@@ -249,9 +249,9 @@ void renderScene()
 	}
 
 	// Drawing pieces.
-	for ( const auto& piece : chessBoard.getPieces() )
+	for ( const auto&[key,piece] : chessBoard.getPieces() )
 	{
-		if ( piece.getState() == ChessPiece::STATE::STATIC )
+		if ( piece.getState() == ChessPiece::STAND )
 		{
 			x = 3.5f - piece.column();
 			y = float( piece.row() ) - 3.5f;
