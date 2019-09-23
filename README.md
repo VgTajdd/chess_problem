@@ -7,7 +7,7 @@ To clone this repository use this:
 git clone --recursive https://github.com/VgTajdd/chess_problem.git
 ```
 
-# SOLVE IT!
+#Solve It!
 
 Implement a function that draws a chess board with the position of the pieces passed as a parameter.
 
