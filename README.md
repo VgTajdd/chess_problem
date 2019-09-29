@@ -6,9 +6,8 @@ To clone this repository use this:
 ``` txt
 git clone --recursive https://github.com/VgTajdd/chess_problem.git
 ```
-___
 
-## SOLVE IT!
+## Solve It!
 
 Implement a function that draws a chess board with the position of the pieces passed as a parameter.
 
@@ -47,9 +46,15 @@ Solutions that only use the text console will not be considered valid.
 
 Verify that the images are located correctly so there are no problems executing your project.
 
-___
-
-# SOLUTION
+## Solution
 
 To generate executables you only need to open solution file (I used Visual Studio Community 2017) and run.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
