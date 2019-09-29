@@ -14,6 +14,9 @@
     <ClCompile Include="..\..\submodules\chess\src\game\ChessGame.cpp">
       <Filter>game</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\submodules\chess\src\game\ChessPlayer.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="glUtils">
@@ -40,6 +43,9 @@
       <Filter>chess</Filter>
     </ClInclude>
     <ClInclude Include="..\..\submodules\chess\src\game\ChessGame.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\submodules\chess\src\game\ChessPlayer.h">
       <Filter>game</Filter>
     </ClInclude>
   </ItemGroup>

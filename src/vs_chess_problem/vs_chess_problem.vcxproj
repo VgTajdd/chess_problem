@@ -134,6 +134,7 @@
     <ClCompile Include="..\..\submodules\chess\src\chess\ChessBoard.cpp" />
     <ClCompile Include="..\..\submodules\chess\src\chess\ChessPiece.cpp" />
     <ClCompile Include="..\..\submodules\chess\src\game\ChessGame.cpp" />
+    <ClCompile Include="..\..\submodules\chess\src\game\ChessPlayer.cpp" />
     <ClCompile Include="..\glUtils\imageloader.cpp" />
     <ClCompile Include="..\main.cpp" />
   </ItemGroup>
@@ -142,6 +143,7 @@
     <ClInclude Include="..\..\submodules\chess\src\chess\ChessBoard.h" />
     <ClInclude Include="..\..\submodules\chess\src\chess\ChessPiece.h" />
     <ClInclude Include="..\..\submodules\chess\src\game\ChessGame.h" />
+    <ClInclude Include="..\..\submodules\chess\src\game\ChessPlayer.h" />
     <ClInclude Include="..\glUtils\imageloader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
