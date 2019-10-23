@@ -11,19 +11,17 @@
 #include <GL/glut.h>
 #endif
 
-using namespace std;
-
 class ChessBoardExtended : public ChessBoard
 {
 public:
 	ChessBoardExtended ChessBoard() {};
 public:
-	void parseChessInput( const std::string input, bool& ok ); // special method.
+	void parseChessInput( const std::string& input, bool& ok ); // special method.
 };
 
-void ChessBoardExtended::parseChessInput( const string input, bool& ok )
+void ChessBoardExtended::parseChessInput( const std::string& input, bool& ok )
 {
-	string ans;
+	std::string ans;
 	ok = false;
 	for ( int i = 0; i < input.length(); i++ )
 	{
@@ -31,18 +29,18 @@ void ChessBoardExtended::parseChessInput( const string input, bool& ok )
 		if ( isdigit( input[i] ) )
 		{
 			int t = atoi( &c );
-			ans.append( string( t, '*' ) );
+			ans.append( std::string( t, '*' ) );
 		}
 		else if ( isalpha( input[i] ) )
 		{
-			ans.append( string( 1, c ) );
+			ans.append( std::string( 1, c ) );
 		}
 	}
 
 	// Validations.
 	if ( ans.size() == CELLS_COUNT )
 	{
-		map< ChessPiece::TYPE, vector< int > > freq_b, freq_w;
+		std::map< ChessPiece::TYPE, std::vector< int > > freq_b, freq_w;
 		for ( int i = 0; i < ans.length(); i++ )
 		{
 			char c = tolower( ans[i] );
@@ -127,8 +125,8 @@ GLuint loadTexture( Image* image )
 	return textureId;
 }
 
-map< ChessPiece::TYPE, GLuint > textureIdByTypeW;
-map< ChessPiece::TYPE, GLuint > textureIdByTypeB;
+std::map< ChessPiece::TYPE, GLuint > textureIdByTypeW;
+std::map< ChessPiece::TYPE, GLuint > textureIdByTypeB;
 
 void createTextureId( const char* assetPath, const ChessPiece::TYPE type, const bool isBlack )
 {
@@ -260,16 +258,16 @@ void renderScene()
 	}
 
 	glutSwapBuffers();
-	cout << "\nScene rendered...";
+	std::cout << "\nScene rendered...";
 }
 
-void drawChessBoard( const string initPosition )
+void drawChessBoard( const std::string& initPosition )
 {
 	bool ok = false;
 	chessBoard.parseChessInput( initPosition, ok );
 	if ( !ok )
 	{
-		cout << "\nInvalid String";
+		std::cout << "\nInvalid String";
 	}
 }
 
@@ -281,7 +279,7 @@ int main( int argc, char** argv )
 	glutCreateWindow( "Chess with OpenGL" );
 	initRendering();
 
-	string initPosition( "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR" );
+	std::string initPosition( "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR" );
 	drawChessBoard( initPosition );
 
 	glutDisplayFunc( renderScene );
